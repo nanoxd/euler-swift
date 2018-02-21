@@ -1,12 +1,12 @@
 import Foundation
 
 /// A sequence of fibonacci numbers
-struct FibonacciSequence: Sequence, IteratorProtocol {
-    typealias Element = Int
-    private var current = 0
-    private var nextValue = 1
+struct FibonacciSequence<T: Numeric>: Sequence, IteratorProtocol {
+    typealias Element = T
+    private var current: T = 0
+    private var nextValue: T = 1
 
-    mutating func next() -> Int? {
+    mutating func next() -> Element? {
         let value = current
         current = nextValue
         nextValue = nextValue + value
