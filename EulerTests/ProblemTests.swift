@@ -30,6 +30,28 @@ final class ProblemTests: QuickSpec {
                     expect(multiplesOfThreeAndFive.sum()) == 233_168
                 }
             }
+
+            context("2") {
+                it("returns the first 10 terms") {
+                    let fibs = FibonacciSequence<Int>()
+                        .prefix(12)
+                        .dropFirst(2)
+
+                    expect(fibs).to(contain(1, 2, 3, 5, 8, 13, 21, 34, 55, 89))
+                    expect(fibs.sum()) == 231
+                }
+
+                it("returns the sum of values that do not exceed four million") {
+                    let fibs = FibonacciSequence<UInt64>()
+                        .prefix(65) // Naively expect there to be less than 4 million
+                        .dropFirst(2)
+                        .filter { $0 < 4_000_000 }
+                        .filter { $0 % 2 == 0 }
+
+                    expect(fibs).to(contain(2, 8, 34))
+                    expect(fibs.sum()) == 4_613_732
+                }
+            }
         }
     }
 }
