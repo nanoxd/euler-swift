@@ -17,6 +17,8 @@
 		3EBACEA6203CF50B009CD14E /* Foundation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACEA5203CF50B009CD14E /* Foundation+.swift */; };
 		3EBACEA8203CF52E009CD14E /* ProblemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACEA7203CF52E009CD14E /* ProblemTests.swift */; };
 		3EBACEAA203CF628009CD14E /* Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACEA9203CF628009CD14E /* Euler.swift */; };
+		3EBACEAE203CFD37009CD14E /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACEAD203CFD37009CD14E /* FibonacciSequence.swift */; };
+		3EBACEB0203CFF70009CD14E /* FibonacciSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACEAF203CFF70009CD14E /* FibonacciSequenceTests.swift */; };
 		4E437ED77A657068DA7D6C6A /* Pods_Euler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9D21A83F4F430C1CDF3C10 /* Pods_Euler.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		3EBACEA5203CF50B009CD14E /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
 		3EBACEA7203CF52E009CD14E /* ProblemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTests.swift; sourceTree = "<group>"; };
 		3EBACEA9203CF628009CD14E /* Euler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Euler.swift; sourceTree = "<group>"; };
+		3EBACEAD203CFD37009CD14E /* FibonacciSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
+		3EBACEAF203CFF70009CD14E /* FibonacciSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequenceTests.swift; sourceTree = "<group>"; };
 		648EF8607E22CD5365FDAA26 /* Pods-Euler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euler/Pods-Euler.debug.xcconfig"; sourceTree = "<group>"; };
 		73ABA7BD8875C179321088C2 /* Pods_EulerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EulerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7732DC7C81720CFBFEE3087 /* Pods-EulerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EulerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EulerTests/Pods-EulerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				3EBACE86203CF40C009CD14E /* ViewController.swift */,
 				3EBACEA5203CF50B009CD14E /* Foundation+.swift */,
 				3EBACEA9203CF628009CD14E /* Euler.swift */,
+				3EBACEAD203CFD37009CD14E /* FibonacciSequence.swift */,
 				3EBACEA4203CF431009CD14E /* Support */,
 			);
 			path = Euler;
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBACE99203CF40C009CD14E /* EulerTests.swift */,
+				3EBACEAF203CFF70009CD14E /* FibonacciSequenceTests.swift */,
 				3EBACEA7203CF52E009CD14E /* ProblemTests.swift */,
 				3EBACE9B203CF40C009CD14E /* Info.plist */,
 			);
@@ -358,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBACEAE203CFD37009CD14E /* FibonacciSequence.swift in Sources */,
 				3EBACE87203CF40C009CD14E /* ViewController.swift in Sources */,
 				3EBACEA6203CF50B009CD14E /* Foundation+.swift in Sources */,
 				3EBACE85203CF40C009CD14E /* AppDelegate.swift in Sources */,
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBACE9A203CF40C009CD14E /* EulerTests.swift in Sources */,
+				3EBACEB0203CFF70009CD14E /* FibonacciSequenceTests.swift in Sources */,
 				3EBACEA8203CF52E009CD14E /* ProblemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
