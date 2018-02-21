@@ -52,6 +52,20 @@ final class ProblemTests: QuickSpec {
                     expect(fibs.sum()) == 4_613_732
                 }
             }
+
+            context("3") {
+                it("returns the prime factors for 13,195") {
+                    let factors = self.euler.primeFactors(for: 13_195)
+                    expect(factors.count) == 4
+                    expect(factors).to(contain([5, 7, 13, 29]))
+                }
+
+                it("returns the largest prime factor for 600,851,475,143") {
+                    let factors = self.euler.primeFactors(for: 600_851_475_143)
+
+                    expect(factors.max()) == 6857
+                }
+            }
         }
     }
 }
