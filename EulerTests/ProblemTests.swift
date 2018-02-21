@@ -16,12 +16,18 @@ final class ProblemTests: QuickSpec {
     override func spec() {
         describe("Problems") {
             context("1") {
-                it("sum of multiples of 3 and 5 below 10") {
+                it("sums multiples of 3 and 5 below 10") {
                     let multiplesOfThreeAndFive = self.euler
                         .naturalNumbers(clamp: 10, multiplesOf: 3, 5)
                     print(multiplesOfThreeAndFive)
                     expect(multiplesOfThreeAndFive).to(contain(3, 5, 6, 9))
                     expect(multiplesOfThreeAndFive.sum()) == 23
+                }
+
+                it("sums multiples of 3 and 5 below 1000") {
+                    let multiplesOfThreeAndFive = self.euler.naturalNumbers(clamp: 1000, multiplesOf: 3, 5)
+                    expect(multiplesOfThreeAndFive).to(contain(3, 5, 6, 9))
+                    expect(multiplesOfThreeAndFive.sum()) == 233_168
                 }
             }
         }
