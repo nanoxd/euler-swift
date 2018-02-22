@@ -6,3 +6,4 @@ extension Sequence where Element: Numeric {
         return reduce(0, +)
     }
 }
+
