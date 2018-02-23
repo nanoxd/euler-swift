@@ -32,4 +32,20 @@ final class Euler {
 
         return factors
     }
+
+    func palindrones(min: Int, max: Int) -> Int? {
+        var results = Set<Int>()
+
+        for lhs in (min..<max) {
+            for rhs in (min..<max) {
+                let value = lhs * rhs
+
+                if value.isPalindrone {
+                    results.insert(value)
+                }
+            }
+        }
+
+        return results.max()
+    }
 }

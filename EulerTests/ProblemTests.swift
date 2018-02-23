@@ -66,6 +66,18 @@ final class ProblemTests: QuickSpec {
                     expect(factors.max()) == 6857
                 }
             }
+
+            context("4") {
+                it("should return 9009 as the largest palindrone from two numbers") {
+                    let palindrone = self.euler.palindrones(min: 10, max: 100)
+                    expect(palindrone) == 9009
+                }
+
+                it("should calculate the largest palindrone from three numbers") {
+                    let palindrone = self.euler.palindrones(min: 100, max: 1000)
+                    expect(palindrone) == 906609
+                }
+            }
         }
     }
 }
