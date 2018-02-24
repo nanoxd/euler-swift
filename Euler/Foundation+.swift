@@ -7,10 +7,47 @@ extension Sequence where Element: Numeric {
     }
 }
 
+private var primeCache: Set<Int> = []
+
 extension Int {
     /// Returns true iff self is a multiple of n
     func isMultiple(of n: Int) -> Bool {
         guard self != 0 else { return false }
         return self % n == 0
+    }
+
+    /// Returns true iff self is a prime number
+    var isPrime: Bool {
+        if self < 2 {
+            return false
+        }
+
+        if self == 2 || self == 3 {
+            return true
+        }
+
+        if isMultiple(of: 2) {
+            return false
+        }
+
+        if primeCache.contains(self) {
+            return true
+        }
+
+        if self == 5 || self == 7 {
+            return true
+        }
+
+        let squareRoot = Int(sqrt(Float(self)))
+        let upperBound = squareRoot
+
+        for i in 3...upperBound {
+            if isMultiple(of: i) {
+                return false
+            }
+        }
+
+        primeCache.insert(self)
+        return true
     }
 }

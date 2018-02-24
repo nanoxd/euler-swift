@@ -32,4 +32,23 @@ class EulerTests: XCTestCase {
             XCTAssertEqual(primes.count, 4)
         }
     }
+
+    func testIsPrime() {
+        XCTAssertFalse(1.isPrime)
+        XCTAssertFalse(4.isPrime)
+
+        XCTAssertTrue(2.isPrime)
+        XCTAssertTrue(3.isPrime)
+        XCTAssertTrue(5.isPrime)
+        XCTAssertTrue(7.isPrime)
+
+        XCTAssertFalse(33.isPrime)
+
+        measure {
+            XCTAssertTrue(101.isPrime)
+            // Test the cache
+            XCTAssertTrue(101.isPrime)
+        }
+
+    }
 }
