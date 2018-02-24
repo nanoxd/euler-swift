@@ -116,6 +116,21 @@ final class ProblemTests: QuickSpec {
                     expect(squareSum - sum) == 25164150
                 }
             }
+
+            context("7") {
+                it("should return the 6th prime as 13") {
+                    let primes = PrimeSequence().prefix(6)
+                    expect(primes).to(contain(2, 3, 5, 7, 11, 13))
+                    let sixth = Array(primes).last
+                    expect(sixth) == 13
+                }
+
+                it("should return the 10,001st prime") {
+                    let primes = PrimeSequence().prefix(10_001)
+                    let prime = Array(primes).last
+                    expect(prime) == 104743
+                }
+            }
         }
     }
 }
