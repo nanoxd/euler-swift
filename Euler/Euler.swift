@@ -81,4 +81,11 @@ final class Euler {
             .map { Int(pow(Double($0), 2)) }
             .sum()
     }
+
+    func squareOfSum(range: CountableClosedRange<Int>) -> Int {
+        let numbers: [Int] = Array(range)
+        let sum = numbers.sum()
+
+        return Int(pow(Double(sum), 2))
+    }
 }

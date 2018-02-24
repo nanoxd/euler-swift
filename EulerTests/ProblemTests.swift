@@ -96,6 +96,18 @@ final class ProblemTests: QuickSpec {
                     let sum = self.euler.sumOfSquares(range: 1...10)
                     expect(sum) == 385
                 }
+
+                it("should return the square of the sum of first ten numbers") {
+                    let sum = self.euler.squareOfSum(range: 1...10)
+                    expect(sum) == 3025
+                }
+
+                it("should return the difference between the sum of the first 10 squared and square of the sum") {
+                    let sum = self.euler.sumOfSquares(range: 1...10)
+                    let squareSum = self.euler.squareOfSum(range: 1...10)
+
+                    expect(squareSum - sum) == 2640
+                }
             }
         }
     }
