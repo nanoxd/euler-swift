@@ -108,6 +108,13 @@ final class ProblemTests: QuickSpec {
 
                     expect(squareSum - sum) == 2640
                 }
+
+                it("should return the difference between the sum of the first 100 squared and square of the sum") {
+                    let sum = self.euler.sumOfSquares(range: 1...100)
+                    let squareSum = self.euler.squareOfSum(range: 1...100)
+
+                    expect(squareSum - sum) == 25164150
+                }
             }
         }
     }
