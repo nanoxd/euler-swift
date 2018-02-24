@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct PrimeSequence: Sequence, IteratorProtocol {
+    typealias Element = Int
+    private var current = 1
+    private var nextPrime = 1
+
+    mutating func next() -> Element? {
+        nextPrime = current + 1
+        while !nextPrime.isPrime {
+            nextPrime += 1
+        }
+
+        current = nextPrime
+        return nextPrime
+    }
+}
+
