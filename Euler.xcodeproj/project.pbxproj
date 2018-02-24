@@ -91,6 +91,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3E09FC9B2042015D00804B5B /* Sequences */ = {
+			isa = PBXGroup;
+			children = (
+				3EBACEAD203CFD37009CD14E /* FibonacciSequence.swift */,
+			);
+			path = Sequences;
+			sourceTree = "<group>";
+		};
 		3EBACE78203CF40C009CD14E = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +127,7 @@
 				3EBACEA5203CF50B009CD14E /* Foundation+.swift */,
 				3EBACEA9203CF628009CD14E /* Euler.swift */,
 				3EBF8259203F85A200E6A327 /* Palindronable.swift */,
-				3EBACEAD203CFD37009CD14E /* FibonacciSequence.swift */,
+				3E09FC9B2042015D00804B5B /* Sequences */,
 				3EBACEA4203CF431009CD14E /* Support */,
 			);
 			path = Euler;
