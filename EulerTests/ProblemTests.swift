@@ -78,6 +78,13 @@ final class ProblemTests: QuickSpec {
                     expect(palindrone) == 906609
                 }
             }
+
+            context("5") {
+                it("should return 2520 as the smallest number that can be divided by 1...10 without a remainder") {
+                    let smallestMultiple = self.euler.smallestMultiple(min: 1, max: 10)
+                    expect(smallestMultiple) == 2520
+                }
+            }
         }
     }
 }

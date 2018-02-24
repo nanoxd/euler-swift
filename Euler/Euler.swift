@@ -48,4 +48,29 @@ final class Euler {
 
         return results.max()
     }
+
+    func smallestMultiple(min: Int, max: Int) -> Int {
+        var number = max
+        var i = 0
+
+        let clamp = max - min + 1
+
+        repeat {
+            for n in min...max {
+                if number.isMultiple(of: n) {
+                    i += 1
+                } else {
+                    break
+                }
+            }
+
+            if i != clamp {
+                i = 0
+                number += 1
+            }
+
+        } while i != clamp
+
+        return number
+    }
 }
