@@ -54,4 +54,16 @@ extension Int {
     var squared: Int {
         return Int(pow(Double(self), 2))
     }
+
+    var divisors: [Int] {
+        guard self != 0 else { return [] }
+
+        return (1...self)
+            .filter { self.isMultiple(of: $0) }
+    }
+
+    var factorial: Int {
+        return (1...self)
+            .reduce(1, *)
+    }
 }

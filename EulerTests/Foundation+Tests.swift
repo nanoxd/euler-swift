@@ -47,6 +47,34 @@ final class FoundationTests: QuickSpec {
                         expect(num.isMultiple(of: 1)) == false
                     }
                 }
+
+                context("divisors") {
+                    it("should be empty for 0") {
+                        expect(0.divisors.isEmpty) == true
+                    }
+
+                    it("should return divisors for 10") {
+                        expect(10.divisors).to(contain(1, 2, 5, 10))
+                    }
+
+                    it("should return divisors for 1") {
+                        expect(1.divisors).to(contain(1))
+                    }
+                }
+
+                context("factorial") {
+                    it("should calculate the factorial for 1") {
+                        expect(1.factorial) == 1
+                    }
+
+                    it("should calculate the factorial for 3") {
+                        expect(3.factorial) == 6
+                    }
+
+                    it("should calculate the factorial for 5") {
+                        expect(5.factorial) == 120
+                    }
+                }
             }
         }
     }
