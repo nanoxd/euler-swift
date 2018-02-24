@@ -7,3 +7,10 @@ extension Sequence where Element: Numeric {
     }
 }
 
+extension Int {
+    /// Returns true iff self is a multiple of n
+    func isMultiple(of n: Int) -> Bool {
+        guard self != 0 else { return false }
+        return self % n == 0
+    }
+}

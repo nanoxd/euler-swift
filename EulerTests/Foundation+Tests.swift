@@ -25,6 +25,29 @@ final class FoundationTests: QuickSpec {
                     expect(11.12.isPalindrone) == false
                 }
             }
+
+            context("Int") {
+                context("isMultiple(of:)") {
+                    it("should return true when it is a multiple") {
+                        let num = 15
+
+                        expect(num.isMultiple(of: 5)) == true
+                        expect(num.isMultiple(of: 3)) == true
+                    }
+
+                    it("should return false when it is not a multiple") {
+                        let num = 15
+                        expect(num.isMultiple(of: 2)) == false
+                        expect(num.isMultiple(of: 6)) == false
+                    }
+
+                    it("should return false when value is 0") {
+                        let num = 0
+                        expect(num.isMultiple(of: 1)) == false
+                        expect(num.isMultiple(of: 1)) == false
+                    }
+                }
+            }
         }
     }
 }
