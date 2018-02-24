@@ -50,4 +50,8 @@ extension Int {
         primeCache.insert(self)
         return true
     }
+
+    var squared: Int {
+        return Int(pow(Double(self), 2))
+    }
 }

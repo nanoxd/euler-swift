@@ -78,7 +78,7 @@ final class Euler {
         let numbers: [Int] = Array(range)
 
         return numbers
-            .map { Int(pow(Double($0), 2)) }
+            .map { $0.squared }
             .sum()
     }
 
@@ -86,6 +86,6 @@ final class Euler {
         let numbers: [Int] = Array(range)
         let sum = numbers.sum()
 
-        return Int(pow(Double(sum), 2))
+        return sum.squared
     }
 }
