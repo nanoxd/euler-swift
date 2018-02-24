@@ -73,4 +73,12 @@ final class Euler {
 
         return number
     }
+
+    func sumOfSquares(range: CountableClosedRange<Int>) -> Int {
+        let numbers: [Int] = Array(range)
+
+        return numbers
+            .map { Int(pow(Double($0), 2)) }
+            .sum()
+    }
 }

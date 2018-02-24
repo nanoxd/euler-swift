@@ -90,6 +90,13 @@ final class ProblemTests: QuickSpec {
                     expect(smallestMultiple) == 232792560
                 }
             }
+
+            context("6") {
+                it("should return the sum of the first ten numbers squared") {
+                    let sum = self.euler.sumOfSquares(range: 1...10)
+                    expect(sum) == 385
+                }
+            }
         }
     }
 }
