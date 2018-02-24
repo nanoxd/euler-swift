@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		028A6620AACA945A2E00FE53 /* Pods_EulerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73ABA7BD8875C179321088C2 /* Pods_EulerTests.framework */; };
 		3E09FC9D2042018300804B5B /* PrimeSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09FC9C2042018300804B5B /* PrimeSequence.swift */; };
+		3E5060E020420EF4000893E0 /* Problem10-19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */; };
 		3EA93E4A203F86B0004972EC /* Foundation+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA93E49203F86B0004972EC /* Foundation+Tests.swift */; };
 		3EBACE85203CF40C009CD14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACE84203CF40C009CD14E /* AppDelegate.swift */; };
 		3EBACE87203CF40C009CD14E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACE86203CF40C009CD14E /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0F9D21A83F4F430C1CDF3C10 /* Pods_Euler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E09FC9C2042018300804B5B /* PrimeSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeSequence.swift; sourceTree = "<group>"; };
+		3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem10-19Tests.swift"; sourceTree = "<group>"; };
 		3EA93E49203F86B0004972EC /* Foundation+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Tests.swift"; sourceTree = "<group>"; };
 		3EBACE81203CF40C009CD14E /* Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBACE84203CF40C009CD14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				3EA93E49203F86B0004972EC /* Foundation+Tests.swift */,
 				3EBACEAF203CFF70009CD14E /* FibonacciSequenceTests.swift */,
 				3EBACEA7203CF52E009CD14E /* ProblemTests.swift */,
+				3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */,
 				3EBACE9B203CF40C009CD14E /* Info.plist */,
 			);
 			path = EulerTests;
@@ -399,6 +402,7 @@
 				3EBACEB0203CFF70009CD14E /* FibonacciSequenceTests.swift in Sources */,
 				3EA93E4A203F86B0004972EC /* Foundation+Tests.swift in Sources */,
 				3EBACEA8203CF52E009CD14E /* ProblemTests.swift in Sources */,
+				3E5060E020420EF4000893E0 /* Problem10-19Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
