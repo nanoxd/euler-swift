@@ -157,7 +157,7 @@ final class ProblemTests: QuickSpec {
                 """
 
                 func maxValue(numberOfAdjacentDigits n: Int) -> Int? {
-                    let digitValues = thousandDigitNumber.characters
+                    let digitValues = thousandDigitNumber
                         .flatMap { Int(String($0)) }
 
                     return (0..<digitValues.count - n)

@@ -22,7 +22,6 @@ class MoreProblemTests: XCTestCase {
         func sumOfTwo(toThePowerOf n: Int) -> Int {
             let two: BigInt = 2
             return two.power(n).description
-                .characters
                 .flatMap { Int(String($0)) }
                 .sum()
         }
@@ -38,7 +37,6 @@ class MoreProblemTests: XCTestCase {
     func testProblem20() {
         let factorialOfTen = 10.factorial
         let sumOfFactorialOfTen = factorialOfTen.description
-            .characters
             .flatMap { Int(String($0)) }
             .sum()
 
@@ -46,7 +44,6 @@ class MoreProblemTests: XCTestCase {
 
         let factorialOfOneHundred = 100.bigInt.factorial
         let sumOfFactorialOfOneHundred = factorialOfOneHundred.description
-            .characters
             .flatMap { Int(String($0)) }
             .sum()
 
