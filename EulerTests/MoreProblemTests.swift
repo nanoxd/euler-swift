@@ -52,4 +52,19 @@ class MoreProblemTests: XCTestCase {
 
         XCTAssertEqual(sumOfFactorialOfOneHundred, 648)
     }
+
+    func testProblem25() {
+        let fibsUpTo1000Digits = FibonacciSequence<BigInt>()
+            .prefix { i in
+                String(i).count <= 1000
+            }
+            .enumerated()
+            .filter { (offset, i) -> Bool in
+                return String(i).count == 1000
+        }
+
+
+
+        XCTAssertEqual(fibsUpTo1000Digits.first?.offset, 4782)
+    }
 }
