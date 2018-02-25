@@ -3,7 +3,7 @@ import XCTest
 import BigInt
 @testable import Euler
 
-class ProblemTenThroughNineteentests: XCTestCase {
+class MoreProblemTests: XCTestCase {
     func testProblem10() {
         let sumOfPrimesBelow10 = PrimeSequence()
             .prefix { $0 < 10 }

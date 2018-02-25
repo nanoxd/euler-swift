@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		028A6620AACA945A2E00FE53 /* Pods_EulerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73ABA7BD8875C179321088C2 /* Pods_EulerTests.framework */; };
 		3E09FC9D2042018300804B5B /* PrimeSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09FC9C2042018300804B5B /* PrimeSequence.swift */; };
-		3E5060E020420EF4000893E0 /* Problem10-19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */; };
+		3E5060E020420EF4000893E0 /* MoreProblemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5060DF20420EF4000893E0 /* MoreProblemTests.swift */; };
 		3E5060E220421115000893E0 /* TriangleSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5060E120421115000893E0 /* TriangleSequence.swift */; };
 		3E6F2A3E204211D600F7BD34 /* TriangleSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F2A3D204211D600F7BD34 /* TriangleSequenceTests.swift */; };
 		3E6F2A40204327BD00F7BD34 /* BigInt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F2A3F204327BD00F7BD34 /* BigInt+.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		0F9D21A83F4F430C1CDF3C10 /* Pods_Euler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E09FC9C2042018300804B5B /* PrimeSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeSequence.swift; sourceTree = "<group>"; };
-		3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem10-19Tests.swift"; sourceTree = "<group>"; };
+		3E5060DF20420EF4000893E0 /* MoreProblemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreProblemTests.swift; sourceTree = "<group>"; };
 		3E5060E120421115000893E0 /* TriangleSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleSequence.swift; sourceTree = "<group>"; };
 		3E6F2A3D204211D600F7BD34 /* TriangleSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleSequenceTests.swift; sourceTree = "<group>"; };
 		3E6F2A3F204327BD00F7BD34 /* BigInt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BigInt+.swift"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				3EBACEAF203CFF70009CD14E /* FibonacciSequenceTests.swift */,
 				3E6F2A3D204211D600F7BD34 /* TriangleSequenceTests.swift */,
 				3EBACEA7203CF52E009CD14E /* ProblemTests.swift */,
-				3E5060DF20420EF4000893E0 /* Problem10-19Tests.swift */,
+				3E5060DF20420EF4000893E0 /* MoreProblemTests.swift */,
 				3EBACE9B203CF40C009CD14E /* Info.plist */,
 			);
 			path = EulerTests;
@@ -419,7 +419,7 @@
 				3E6F2A3E204211D600F7BD34 /* TriangleSequenceTests.swift in Sources */,
 				3EA93E4A203F86B0004972EC /* Foundation+Tests.swift in Sources */,
 				3EBACEA8203CF52E009CD14E /* ProblemTests.swift in Sources */,
-				3E5060E020420EF4000893E0 /* Problem10-19Tests.swift in Sources */,
+				3E5060E020420EF4000893E0 /* MoreProblemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
