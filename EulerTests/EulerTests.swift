@@ -49,6 +49,13 @@ class EulerTests: XCTestCase {
             // Test the cache
             XCTAssertTrue(101.isPrime)
         }
+    }
 
+    func testGreatestCommonDivisor() {
+        let fiftyFour = 54
+
+        measure {
+            XCTAssertEqual(fiftyFour.gcd(24), 6)
+        }
     }
 }

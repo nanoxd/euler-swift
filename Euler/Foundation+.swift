@@ -72,6 +72,15 @@ extension Int {
     }
 
     var double: Double { return Double(self) }
+
+    /// Returns the greatest common divisor using the Euclidean algorithm.
+    func gcd(_ i: Int) -> Int {
+        guard i != 0 else {
+            return self
+        }
+
+        return i.gcd(self % i)
+    }
 }
 
 extension Int64 {
