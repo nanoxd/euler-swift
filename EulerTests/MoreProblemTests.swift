@@ -60,8 +60,6 @@ class MoreProblemTests: XCTestCase {
                 return String(i).count == 1000
         }
 
-
-
         XCTAssertEqual(fibsUpTo1000Digits.first?.offset, 4782)
     }
 

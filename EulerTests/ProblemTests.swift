@@ -81,12 +81,12 @@ final class ProblemTests: QuickSpec {
 
             context("5") {
                 it("should return 2520 as the smallest number that can be divided by 1...10 without a remainder") {
-                    let smallestMultiple = self.euler.smallestMultiple(min: 1, max: 10)
+                    let smallestMultiple = self.euler.smallestMultiple(in: 1...10)
                     expect(smallestMultiple) == 2520
                 }
 
                 it("should calculate the smallest multiple that can be divided by 1...20 without a remainder") {
-                    let smallestMultiple = self.euler.smallestMultiple(min: 1, max: 20)
+                    let smallestMultiple = self.euler.smallestMultiple(in: 1...20)
                     expect(smallestMultiple) == 232792560
                 }
             }

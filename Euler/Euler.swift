@@ -50,10 +50,10 @@ final class Euler {
         return results.max()
     }
 
-    func smallestMultiple(min: Int, max: Int) -> Int {
-        let numbers: [Int] = Array(min...max)
+    func smallestMultiple(in range: CountableClosedRange<Int>) -> Int {
+        let numbers: [Int] = Array(range)
 
-        return numbers.reduce(numbers.first ?? 1) { (num, i) -> Int in
+        return numbers.reduce(range.lowerBound) { (num, i) -> Int in
             return num.lcm(i)
         }
     }
