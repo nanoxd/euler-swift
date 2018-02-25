@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import BigInt
 @testable import Euler
 
 class ProblemTenThroughNineteentests: XCTestCase {
@@ -18,12 +19,18 @@ class ProblemTenThroughNineteentests: XCTestCase {
     }
 
     func testProblem16() {
-        let twoToTheFifteen = (2 ** 15)
-            .description
-            .characters
-            .flatMap { string in Int(String(string)) }
-            .sum()
+        func sumOfTwo(toThePowerOf n: Int) -> Int {
+            let two: BigInt = 2
+            return two.power(n).description
+                .characters
+                .flatMap { Int(String($0)) }
+                .sum()
+        }
 
+        let twoToTheFifteen = sumOfTwo(toThePowerOf: 15)
         XCTAssertEqual(twoToTheFifteen, 26)
+
+        let twoToTheThousand = sumOfTwo(toThePowerOf: 1000)
+        XCTAssertEqual(twoToTheThousand, 1366)
     }
 }
