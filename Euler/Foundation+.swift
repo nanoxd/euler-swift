@@ -81,6 +81,11 @@ extension Int {
 
         return i.gcd(self % i)
     }
+
+    func lcm(_ i: Int) -> Int {
+        let greatestCommonDivisor = gcd(i)
+        return self * i / greatestCommonDivisor
+    }
 }
 
 extension Int64 {

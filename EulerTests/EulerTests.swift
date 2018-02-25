@@ -58,4 +58,12 @@ class EulerTests: XCTestCase {
             XCTAssertEqual(fiftyFour.gcd(24), 6)
         }
     }
+
+    func testLowestCommonMultiple() {
+        let fiftyFour = 54
+
+        measure {
+            XCTAssertEqual(fiftyFour.lcm(24), 216)
+        }
+    }
 }
