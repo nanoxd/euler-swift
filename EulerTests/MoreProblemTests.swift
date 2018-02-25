@@ -69,5 +69,8 @@ class MoreProblemTests: XCTestCase {
         let euler = Euler()
         let distinctsUpToFive = euler.distinctTerms(in: 2...5)
         XCTAssertEqual(distinctsUpToFive.count, 15)
+
+        let distinctsUpTo100 = euler.distinctTerms(in: 2...100)
+        XCTAssertEqual(distinctsUpTo100.count, 9183)
     }
 }
