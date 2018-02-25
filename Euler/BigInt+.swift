@@ -7,3 +7,9 @@ extension BigInt {
             .reduce(1, *)
     }
 }
+
+extension Int {
+    var bigInt: BigInt {
+        return BigInt(self)
+    }
+}
