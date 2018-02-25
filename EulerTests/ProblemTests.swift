@@ -43,9 +43,10 @@ final class ProblemTests: QuickSpec {
 
                 it("returns the sum of values that do not exceed four million") {
                     let fibs = FibonacciSequence<UInt64>()
-                        .prefix(65) // Naively expect there to be less than 4 million
+                        .prefix { i in
+                            i < 4_000_000
+                        }
                         .dropFirst(2)
-                        .filter { $0 < 4_000_000 }
                         .filter { $0 % 2 == 0 }
 
                     expect(fibs).to(contain(2, 8, 34))
