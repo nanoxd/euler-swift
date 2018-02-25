@@ -68,8 +68,10 @@ extension Int {
     }
 
     static func **(lhs: Int, rhs: Int) -> Int {
-        return Int(pow(Double(lhs), Double(rhs)))
+        return Int(pow(lhs.double, rhs.double))
     }
+
+    var double: Double { return Double(self) }
 }
 
 extension Int64 {
