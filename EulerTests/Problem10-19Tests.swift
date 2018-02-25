@@ -16,4 +16,14 @@ class ProblemTenThroughNineteentests: XCTestCase {
 
         XCTAssertEqual(sumOfPrimesBelowTwoMillion, 142_913_828_922)
     }
+
+    func testProblem16() {
+        let twoToTheFifteen = (2 ** 15)
+            .description
+            .characters
+            .flatMap { string in Int(String(string)) }
+            .sum()
+
+        XCTAssertEqual(twoToTheFifteen, 26)
+    }
 }
