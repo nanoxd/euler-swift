@@ -50,28 +50,11 @@ final class Euler {
     }
 
     func smallestMultiple(min: Int, max: Int) -> Int {
-        var number = max
-        var i = 0
+        let numbers: [Int] = Array(min...max)
 
-        let clamp = max - min + 1
-
-        repeat {
-            for n in min...max {
-                if number.isMultiple(of: n) {
-                    i += 1
-                } else {
-                    break
-                }
-            }
-
-            if i != clamp {
-                i = 0
-                number += 1
-            }
-
-        } while i != clamp
-
-        return number
+        return numbers.reduce(numbers.first ?? 1) { (num, i) -> Int in
+            return num.lcm(i)
+        }
     }
 
     func sumOfSquares(range: CountableClosedRange<Int>) -> Int {
