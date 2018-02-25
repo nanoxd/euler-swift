@@ -64,4 +64,10 @@ class MoreProblemTests: XCTestCase {
 
         XCTAssertEqual(fibsUpTo1000Digits.first?.offset, 4782)
     }
+
+    func testProblem29() {
+        let euler = Euler()
+        let distinctsUpToFive = euler.distinctTerms(in: 2...5)
+        XCTAssertEqual(distinctsUpToFive.count, 15)
+    }
 }

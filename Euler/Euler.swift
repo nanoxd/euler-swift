@@ -1,4 +1,5 @@
 import Foundation
+import BigInt
 
 final class Euler {
     func naturalNumbers(clamp: Int, multiplesOf multiples: Int...) -> [Int] {
@@ -70,5 +71,18 @@ final class Euler {
         let sum = numbers.sum()
 
         return sum.squared
+    }
+
+    func distinctTerms(in range: CountableClosedRange<Int>) -> Set<BigInt> {
+        var set: Set<BigInt> = []
+        let numbers: [Int] = Array(range)
+
+        for i in numbers {
+            for power in numbers {
+                set.insert(BigInt(i).power(power))
+            }
+        }
+
+        return set
     }
 }
