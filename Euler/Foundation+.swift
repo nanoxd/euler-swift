@@ -72,6 +72,18 @@ extension Int {
     }
 }
 
+extension Int64 {
+    static func **(lhs: Int64, rhs: Int64) -> Int64 {
+        return Int64(pow(Double(lhs), Double(rhs)))
+    }
+}
+
+extension Double {
+    static func **(lhs: Double, rhs: Double) -> Double {
+        return pow(lhs, rhs)
+    }
+}
+
 precedencegroup PowerPrecedence {
     higherThan: MultiplicationPrecedence
 }
