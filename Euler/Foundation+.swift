@@ -52,7 +52,7 @@ extension Int {
     }
 
     var squared: Int {
-        return Int(pow(Double(self), 2))
+        return self ** 2
     }
 
     var divisors: [Int] {
@@ -66,4 +66,15 @@ extension Int {
         return (1...self)
             .reduce(1, *)
     }
+
+    static func **(lhs: Int, rhs: Int) -> Int {
+        return Int(pow(Double(lhs), Double(rhs)))
+    }
 }
+
+precedencegroup PowerPrecedence {
+    higherThan: MultiplicationPrecedence
+}
+
+infix operator **: PowerPrecedence
+
