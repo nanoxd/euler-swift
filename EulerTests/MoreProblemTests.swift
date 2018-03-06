@@ -4,6 +4,11 @@ import BigInt
 @testable import Euler
 
 class MoreProblemTests: XCTestCase {
+    func testProblem9() {
+        let exampleTriplet = 3.squared + 4.squared
+        XCTAssertEqual(exampleTriplet, 5.squared)
+    }
+
     func testProblem10() {
         let sumOfPrimesBelow10 = PrimeSequence()
             .prefix { $0 < 10 }
