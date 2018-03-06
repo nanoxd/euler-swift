@@ -7,6 +7,16 @@ class MoreProblemTests: XCTestCase {
     func testProblem9() {
         let exampleTriplet = 3.squared + 4.squared
         XCTAssertEqual(exampleTriplet, 5.squared)
+
+        for a in (1...500) {
+            for b in (a...500) {
+                for c in (b...500) {
+                    if a.squared + b.squared == c.squared, a + b + c == 1000 {
+                        XCTAssertEqual(a * b * c, 31875000)
+                    }
+                }
+            }
+        }
     }
 
     func testProblem10() {
